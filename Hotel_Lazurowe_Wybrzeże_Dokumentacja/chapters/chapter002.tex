@@ -1,57 +1,67 @@
 \chapter{Analiza wymagań systemowych}
 
 \section{Wymagania funkcjonalne}
-W procesie projektowania systemu „French Riviera” kluczowe było zdefiniowanie konkretnych funkcjonalności dla każdej z siedmiu grup użytkowników. Poniżej przedstawiono szczegółowy podział możliwości systemowych, uwzględniający specyfikę pracy działów operacyjnych, technicznych oraz potrzeby kadry zarządzającej.
+System „French Riviera” został zaprojektowany jako wewnętrzna aplikacja hotelowa wspierająca obsługę gości, realizację usług oraz organizację pracy personelu. Zakres projektu skupia się na przygotowaniu widoków dla poszczególnych grup użytkowników, z uwzględnieniem ich codziennych zadań oraz najważniejszych informacji prezentowanych w interfejsie.
 
 \subsection{Moduł Gościa Hotelowego (Tablet pokojowy)}
-Interfejs ma zapewnić gościowi pełną autonomię podczas pobytu, eliminując zbędne bariery komunikacyjne.
+Interfejs przeznaczony dla gościa hotelowego, umożliwiający wygodne korzystanie z usług hotelowych za pośrednictwem tabletu znajdującego się w pokoju.
 \begin{itemize}
-    \item \textbf{Obsługa Room Service:} Przeglądanie menu, składanie zamówień oraz ich personalizacja.
-    \item \textbf{Zgłoszenia logistyczne:} Szybkie przyciski zamawiania sprzątania, wymiany pościeli, zgłaszania usterek czy uzupełnienia minibaru.
-    \item \textbf{Panel informacyjny:} Podgląd statusu aktualnych zleceń oraz kluczowych parametrów zakwaterowania (np. numer pokoju, data wymeldowania, dostępne udogodnienia).
+    \item \textbf{Room Service:} Przeglądanie menu, wybór produktów, określanie ilości oraz dodawanie uwag do zamówienia.
+    \item \textbf{Zgłoszenia pokojowe:} Szybkie zgłaszanie potrzeby sprzątania, wymiany ręczników, wymiany pościeli, uzupełnienia minibaru oraz usterek technicznych.
+    \item \textbf{Usługi dodatkowe:} Przeglądanie i wybór dodatkowych atrakcji hotelowych, takich jak kort tenisowy, trening na siłowni, zabiegi SPA lub inne usługi dostępne w hotelu.
+    \item \textbf{Panel informacyjny:} Podgląd podstawowych informacji o pobycie, takich jak numer pokoju, data wymeldowania, aktywne usługi i bieżące zgłoszenia.
+    \item \textbf{Statusy:} Podgląd aktualnego statusu zamówień, zgłoszeń i wykupionych usług.
 \end{itemize}
 
 \subsection{Moduł Housekeepingu (Aplikacja mobilna)}
-Zoptymalizowany pod kątem pracy dynamicznej, skupiony na szybkim obiegu informacji o czystości pokoi.
+Interfejs mobilny przeznaczony dla obsługi pięter, skupiony na szybkiej realizacji zadań związanych z pokojami.
 \begin{itemize}
-    \item \textbf{Lista zadań:} Dynamiczne zestawienie pokoi wymagających obsługi, posortowane według priorytetów ustawionych przez menadżera.
-    \item \textbf{Aktualizacja stanu:} Zmiana statusu pokoju na "W trakcie sprzątania" lub "Czysty", co natychmiast odświeża widok w panelu recepcji.
+    \item \textbf{Lista zadań:} Widok pokoi i zadań przypisanych do obsługi, z możliwością podziału według piętra, priorytetu lub rodzaju zadania.
+    \item \textbf{Typy zadań:} Obsługa zadań takich jak sprzątanie pokoju, wymiana ręczników, wymiana pościeli oraz uzupełnienie minibaru.
+    \item \textbf{Szczegóły zadania:} Podgląd numeru pokoju, rodzaju zgłoszenia, czasu zgłoszenia, priorytetu oraz dodatkowych uwag.
+    \item \textbf{Aktualizacja statusu:} Oznaczanie zadania jako będącego w realizacji lub wykonanego.
 \end{itemize}
 
+\newpage
+
 \subsection{Moduł Konserwatora / Maintenance (Aplikacja mobilna)}
-Dedykowany pionowi technicznemu, służący do sprawnego usuwania usterek w obiekcie.
+Interfejs mobilny przeznaczony dla pionu technicznego, służący do obsługi usterek zgłaszanych w hotelu.
 \begin{itemize}
-    \item \textbf{Rejestr awarii:} Podgląd zgłoszeń technicznych przesyłanych przez gości (np. awaria klimatyzacji).
-    \item \textbf{Zarządzanie usterkami:} Możliwość przyjęcia zgłoszenia do realizacji i oznaczenia jego zakończenia.
+    \item \textbf{Lista usterek:} Widok zgłoszeń technicznych przypisanych do pokoi.
+    \item \textbf{Szczegóły zgłoszenia:} Podgląd numeru pokoju, rodzaju usterki, czasu zgłoszenia, priorytetu oraz dodatkowych uwag.
+    \item \textbf{Aktualizacja statusu:} Oznaczanie zgłoszenia jako przyjętego do realizacji, będącego w naprawie lub zakończonego.
+    \item \textbf{Filtrowanie zadań:} Przegląd zgłoszeń według statusu, priorytetu.
 \end{itemize}
 
 \subsection{Moduł Recepcji (Aplikacja desktopowa)}
-Centrum operacyjne, które dzięki przeniesieniu zadań zarządczych do menadżera, stało się przejrzystym narzędziem do obsługi gości.
+Główny panel operacyjny służący do bieżącej obsługi pokoi i gości.
 \begin{itemize}
-    \item \textbf{Podgląd obłożenia:} Monitorowanie w czasie rzeczywistym statusów pokoi (wolny, zajęty, wymagający serwisu).
-    \item \textbf{Obsługa procesów meldunkowych:} Narzędzia do szybkiego check-in i check-out oparte na aktualnych danych z pozostałych modułów.
+    \item \textbf{Podgląd pokoi:} Widok pokoi z informacją o ich aktualnym statusie, np. wolny, zajęty, do sprzątania lub awaria.
+    \item \textbf{Szczegóły pokoju:} Podgląd podstawowych informacji o pokoju, pobycie, aktywnych zgłoszeniach i usługach.
+    \item \textbf{Check-in / Check-out:} Widoki wspierające obsługę meldunku i wymeldowania gościa.
 \end{itemize}
 
 \subsection{Moduł Kuchni (Tablet)}
-Panel koncentrujący się na terminowości przygotowywania zamówień gastronomicznych.
+Interfejs tabletowy przeznaczony do obsługi zamówień gastronomicznych składanych przez gości hotelowych.
 \begin{itemize}
-    \item \textbf{Kolejka zamówień:} Chronologiczna lista dań do przygotowania wraz ze szczegółami dotyczącymi numeru pokoju i czasu oczekiwania.
-    \item \textbf{Zarządzanie produkcją:} Informowanie serwisu o gotowości posiłku do odbioru i dostawy.
+    \item \textbf{Kolejka zamówień:} Lista zamówień wraz z numerem pokoju, czasem złożenia i bieżącym statusem.
+    \item \textbf{Szczegóły zamówienia:} Podgląd pozycji zamówienia, liczby produktów oraz dodatkowych uwag.
+    \item \textbf{Aktualizacja statusu:} Oznaczanie zamówienia jako przygotowywanego lub gotowego.
 \end{itemize}
 
 \subsection{Moduł Menadżera (Aplikacja desktopowa)}
-Narzędzie zarządcze pozwalające na kontrolę nad efektywnością i kosztami funkcjonowania hotelu.
+Panel zarządczy przeznaczony do organizacji pracy personelu i nadzoru nad realizacją zadań.
 \begin{itemize}
-    \item \textbf{Zarządzanie personelem:} Wgląd w dane pracowników, zestawienia zarobków oraz rozliczanie czasu pracy.
-    \item \textbf{Harmonogramy:} Tworzenie i edycja grafików zmianowych dla wszystkich działów hotelu.
-    \item \textbf{Zarządzanie procesami:} Delegowanie zadań do odpowiednich pionów oraz analityka opóźnień w realizacji zleceń.
+    \item \textbf{Zarządzanie personelem:} Podgląd listy pracowników, podstawowych danych oraz organizacji pracy personelu.
+    \item \textbf{Harmonogramy:} Tworzenie i edycja grafików zmianowych dla poszczególnych działów hotelu.
+    \item \textbf{Przydzielanie zadań:} Delegowanie zadań do odpowiednich działów, takich jak housekeeping, maintenance czy kuchnia.
+    \item \textbf{Podgląd realizacji:} Monitoring aktualnych zadań i opóźnień w ich wykonaniu.
 \end{itemize}
 
 \subsection{Moduł Administratora (Aplikacja desktopowa)}
-Panel techniczny służący do utrzymania integralności i bezpieczeństwa systemu.
+Panel techniczny służący do zarządzania użytkownikami i utrzymania poprawnego działania systemu.
 \begin{itemize}
-    \item \textbf{Zarządzanie użytkownikami:} Tworzenie kont, nadawanie i modyfikowanie ról oraz uprawnień dostępu.
-    \item \textbf{Bezpieczeństwo i konfiguracja:} Monitorowanie logów systemowych, resetowanie haseł oraz zarządzanie parametrami technicznymi aplikacji.
+    \item \textbf{Zarządzanie użytkownikami:} Tworzenie kont, edycja użytkowników, resetowanie haseł oraz nadawanie ról i uprawnień.
 \end{itemize}
 
 \section{Wymagania niefunkcjonalne}
