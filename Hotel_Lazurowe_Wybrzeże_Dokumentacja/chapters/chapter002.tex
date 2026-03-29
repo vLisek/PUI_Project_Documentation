@@ -1,0 +1,62 @@
+\chapter{Analiza wymagań systemowych}
+
+\section{Wymagania funkcjonalne}
+W procesie projektowania systemu „French Riviera” kluczowe było zdefiniowanie konkretnych funkcjonalności dla każdej z siedmiu grup użytkowników. Poniżej przedstawiono szczegółowy podział możliwości systemowych, uwzględniający specyfikę pracy działów operacyjnych, technicznych oraz potrzeby kadry zarządzającej.
+
+\subsection{Moduł Gościa Hotelowego (Tablet pokojowy)}
+Interfejs ma zapewnić gościowi pełną autonomię podczas pobytu, eliminując zbędne bariery komunikacyjne.
+\begin{itemize}
+    \item \textbf{Obsługa Room Service:} Przeglądanie menu, składanie zamówień oraz ich personalizacja.
+    \item \textbf{Zgłoszenia logistyczne:} Szybkie przyciski zamawiania sprzątania, wymiany pościeli, zgłaszania usterek czy uzupełnienia minibaru.
+    \item \textbf{Panel informacyjny:} Podgląd statusu aktualnych zleceń oraz kluczowych parametrów zakwaterowania (np. numer pokoju, data wymeldowania, dostępne udogodnienia).
+\end{itemize}
+
+\subsection{Moduł Housekeepingu (Aplikacja mobilna)}
+Zoptymalizowany pod kątem pracy dynamicznej, skupiony na szybkim obiegu informacji o czystości pokoi.
+\begin{itemize}
+    \item \textbf{Lista zadań:} Dynamiczne zestawienie pokoi wymagających obsługi, posortowane według priorytetów ustawionych przez menadżera.
+    \item \textbf{Aktualizacja stanu:} Zmiana statusu pokoju na "W trakcie sprzątania" lub "Czysty", co natychmiast odświeża widok w panelu recepcji.
+\end{itemize}
+
+\subsection{Moduł Konserwatora / Maintenance (Aplikacja mobilna)}
+Dedykowany pionowi technicznemu, służący do sprawnego usuwania usterek w obiekcie.
+\begin{itemize}
+    \item \textbf{Rejestr awarii:} Podgląd zgłoszeń technicznych przesyłanych przez gości (np. awaria klimatyzacji).
+    \item \textbf{Zarządzanie usterkami:} Możliwość przyjęcia zgłoszenia do realizacji i oznaczenia jego zakończenia.
+\end{itemize}
+
+\subsection{Moduł Recepcji (Aplikacja desktopowa)}
+Centrum operacyjne, które dzięki przeniesieniu zadań zarządczych do menadżera, stało się przejrzystym narzędziem do obsługi gości.
+\begin{itemize}
+    \item \textbf{Podgląd obłożenia:} Monitorowanie w czasie rzeczywistym statusów pokoi (wolny, zajęty, wymagający serwisu).
+    \item \textbf{Obsługa procesów meldunkowych:} Narzędzia do szybkiego check-in i check-out oparte na aktualnych danych z pozostałych modułów.
+\end{itemize}
+
+\subsection{Moduł Kuchni (Tablet)}
+Panel koncentrujący się na terminowości przygotowywania zamówień gastronomicznych.
+\begin{itemize}
+    \item \textbf{Kolejka zamówień:} Chronologiczna lista dań do przygotowania wraz ze szczegółami dotyczącymi numeru pokoju i czasu oczekiwania.
+    \item \textbf{Zarządzanie produkcją:} Informowanie serwisu o gotowości posiłku do odbioru i dostawy.
+\end{itemize}
+
+\subsection{Moduł Menadżera (Aplikacja desktopowa)}
+Narzędzie zarządcze pozwalające na kontrolę nad efektywnością i kosztami funkcjonowania hotelu.
+\begin{itemize}
+    \item \textbf{Zarządzanie personelem:} Wgląd w dane pracowników, zestawienia zarobków oraz rozliczanie czasu pracy.
+    \item \textbf{Harmonogramy:} Tworzenie i edycja grafików zmianowych dla wszystkich działów hotelu.
+    \item \textbf{Zarządzanie procesami:} Delegowanie zadań do odpowiednich pionów oraz analityka opóźnień w realizacji zleceń.
+\end{itemize}
+
+\subsection{Moduł Administratora (Aplikacja desktopowa)}
+Panel techniczny służący do utrzymania integralności i bezpieczeństwa systemu.
+\begin{itemize}
+    \item \textbf{Zarządzanie użytkownikami:} Tworzenie kont, nadawanie i modyfikowanie ról oraz uprawnień dostępu.
+    \item \textbf{Bezpieczeństwo i konfiguracja:} Monitorowanie logów systemowych, resetowanie haseł oraz zarządzanie parametrami technicznymi aplikacji.
+\end{itemize}
+
+\section{Wymagania niefunkcjonalne}
+Aby system był w pełni użyteczny w środowisku hotelowym, musi spełniać poniższe standardy projektowe:
+\begin{itemize}
+    \item \textbf{Responsywność:} Pełna adaptacja interfejsu do urządzeń mobilnych (Maintenance, Housekeeping) oraz tabletów i komputerów.
+    \item \textbf{Intuicyjność:} Struktura nawigacji ograniczająca wysiłek poznawczy, co jest kluczowe przy dużej dynamice pracy personelu.
+\end{itemize}

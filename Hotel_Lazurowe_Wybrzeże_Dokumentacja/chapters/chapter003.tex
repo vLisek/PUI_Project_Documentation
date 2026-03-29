@@ -1,0 +1,156 @@
+\chapter{Identyfikacja wizualna i Design System}
+
+\section{Specyfikacja palety barw systemu}
+Paleta barw systemu „French Riviera” została zaprojektowana w celu zapewnienia maksymalnej czytelności w trybie ciemnym przy zachowaniu luksusowego charakteru marki.
+
+% --- DEFINICJE WSZYSTKICH KOLORÓW ---
+\definecolor{bgColorPrimary}{HTML}{0B1220}
+\definecolor{bgColorSecondary}{HTML}{111827}
+\definecolor{bgColorTertiary}{HTML}{172033}
+\definecolor{bgColorCard}{HTML}{1B263B}
+\definecolor{bgColorElevated}{HTML}{243047}
+\definecolor{bgColorOverlay}{HTML}{06101B}
+
+\definecolor{brandColorPrimary}{HTML}{2EC5E8}
+\definecolor{brandColorSecondary}{HTML}{7DDDF0}
+\definecolor{brandColorHover}{HTML}{21B6D8}
+\definecolor{brandColorActive}{HTML}{169AB8}
+
+\definecolor{textColorPrimary}{HTML}{F5F7FA}
+\definecolor{textColorSecondary}{HTML}{B8C1CC}
+\definecolor{textColorTertiary}{HTML}{7E8A9A}
+\definecolor{textColorInverse}{HTML}{0B1220}
+\definecolor{textColorAccent}{HTML}{2EC5E8}
+\definecolor{textColorDisabled}{HTML}{5E6A78}
+
+\definecolor{borderColorSubtle}{HTML}{FFFFFF}
+\definecolor{borderColorStrong}{HTML}{3A475C}
+\definecolor{borderColorAccent}{HTML}{2EC5E8}
+
+\definecolor{statusSuccessBg}{HTML}{163528}
+\definecolor{statusSuccessText}{HTML}{7EE2A8}
+\definecolor{statusSuccessBorder}{HTML}{2E8F5A}
+
+\definecolor{statusWarningBg}{HTML}{3A2B14}
+\definecolor{statusWarningText}{HTML}{F5C56B}
+\definecolor{statusWarningBorder}{HTML}{B98928}
+
+\definecolor{statusErrorBg}{HTML}{3A1C22}
+\definecolor{statusErrorText}{HTML}{FF8A9B}
+\definecolor{statusErrorBorder}{HTML}{C94B63}
+
+\definecolor{statusInfoBg}{HTML}{102C36}
+\definecolor{statusInfoText}{HTML}{79D9F0}
+\definecolor{statusInfoBorder}{HTML}{2EC5E8}
+
+\definecolor{roleGuest}{HTML}{2EC5E8}
+\definecolor{roleHouse}{HTML}{7EE2A8}
+\definecolor{roleRecep}{HTML}{B8C1CC}
+\definecolor{roleKitchen}{HTML}{F5C56B}
+\definecolor{roleAdmin}{HTML}{A78BFA}
+\definecolor{roleManager}{HTML}{60A5FA}
+\definecolor{roleMaint}{HTML}{F59E0B}
+
+\subsection{Warstwy tła (Surface \& Background)}
+Zestaw zmiennych kolorystycznych używanych do wyświetlania powierzchni aplikacji, sekcji, kart oraz okien modalnych.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|c|l|p{6.5cm}|}
+\hline
+\textbf{Token} & \textbf{Próbka} & \textbf{HEX} & \textbf{Zastosowanie} \\ \hline
+\/color\/bg\/primary & {\color{bgColorPrimary}\rule{0.8cm}{0.4cm}} & \#0B1220 & Główne tło aplikacji. \\ \hline
+\/color\/bg\/secondary & {\color{bgColorSecondary}\rule{0.8cm}{0.4cm}} & \#111827 & Sekcje pomocnicze i menu. \\ \hline
+\/color\/bg\/tertisiary & {\color{bgColorTertiary}\rule{0.8cm}{0.4cm}} & \#172033 & Trzecia warstwa głębi. \\ \hline
+\/color\/bg\/card & {\color{bgColorCard}\rule{0.8cm}{0.4cm}} & \#1B263B & Kontenery kart UI. \\ \hline
+\/color\/bg\/elevated & {\color{bgColorElevated}\rule{0.8cm}{0.4cm}} & \#243047 & Elementy wysunięte (modale). \\ \hline
+\/color\/bg\/overlay & {\color{bgColorOverlay}\rule{0.8cm}{0.4cm}} & \#06101B & Warstwy nakładek pod oknami. \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Kolory marki i akcenty (Brand)}
+Główne kolory marki i akcenty inspirowane są morzem i tożsamością hotelu klasy premium.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|c|l|l|}
+\hline
+\textbf{Token} & \textbf{Próbka} & \textbf{HEX} & \textbf{Zastosowanie} \\ \hline
+\/color\/brand\/primary & {\color{brandColorPrimary}\rule{0.8cm}{0.4cm}} & \#2EC5E8 & Główny kolor akcji (CTA). \\ \hline
+\/color\/brand\/secondary & {\color{brandColorSecondary}\rule{0.8cm}{0.4cm}} & \#7DDDF0 & Akcenty drugorzędne. \\ \hline
+\/color\/brand\/hover & {\color{brandColorHover}\rule{0.8cm}{0.4cm}} & \#21B6D8 & Stan najechania (Hover). \\ \hline
+\/color\/brand\/active & {\color{brandColorActive}\rule{0.8cm}{0.4cm}} & \#169AB8 & Stan kliknięcia (Active). \\ \hline
+\/color\/brand\/soft & {\color{brandColorPrimary}\rule{0.8cm}{0.4cm}} & \#2EC5E8 & Delikatne podświetlenia. \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Typografia i hierarchia tekstu (Text)}
+Hierarchia tekstu dla treści podstawowej, pomocniczej oraz metadanych.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|c|l|p{6.5cm}|}
+\hline
+\textbf{Token} & \textbf{Próbka} & \textbf{HEX} & \textbf{Zastosowanie} \\ \hline
+\/color\/text\/primary & {\color{textColorPrimary}\rule{0.8cm}{0.4cm}} & \#F5F7FA & Główna treść i tytuły. \\ \hline
+\/color\/text\/secondary & {\color{textColorSecondary}\rule{0.8cm}{0.4cm}} & \#B8C1CC & Teksty pomocnicze. \\ \hline
+\/color\/text\/tertiary & {\color{textColorTertiary}\rule{0.8cm}{0.4cm}} & \#7E8A9A & Metadane i czas. \\ \hline
+\/color\/text\/inverse & {\color{textColorInverse}\rule{0.8cm}{0.4cm}} & \#0B1220 & Tekst na jasnych akcentach. \\ \hline
+\/color\/text\/accent & {\color{textColorAccent}\rule{0.8cm}{0.4cm}} & \#2EC5E8 & Linki i wyróżnienia. \\ \hline
+\/color\/text\/disabled & {\color{textColorDisabled}\rule{0.8cm}{0.4cm}} & \#5E6A78 & Stany nieaktywne. \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Obramowania i separatory (Borders)}
+Kolory obramowania używane dla kart, danych wejściowych i separatorów.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|c|l|l|}
+\hline
+\textbf{Token} & \textbf{Próbka} & \textbf{HEX} & \textbf{Zastosowanie} \\ \hline
+\/color\/border\/subtle & {\color{borderColorSubtle}\rule{0.8cm}{0.4cm}} & \#FFFFFF & Delikatne linie. \\ \hline
+\/color\/border\/default & {\color{borderColorSubtle}\rule{0.8cm}{0.4cm}} & \#FFFFFF & Podziały sekcji. \\ \hline
+\/color\/border\/strong & {\color{borderColorStrong}\rule{0.8cm}{0.4cm}} & \#3A475C & Krawędzie kontenerów. \\ \hline
+\/color\/border\/accent & {\color{borderColorAccent}\rule{0.8cm}{0.4cm}} & \#2EC5E8 & Fokus i wybór. \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{System statusów (Status Feedback)}
+Kolory informacji zwrotnej używane dla stanów powodzenia, ostrzeżenia i błędu.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|c|c|c|l|}
+\hline
+\textbf{Typ statusu} & \textbf{Tło} & \textbf{Tekst} & \textbf{Bord.} & \textbf{Kod HEX (Tekst)} \\ \hline
+Success & \colorbox{statusSuccessBg}{\phantom{XX}} & \colorbox{statusSuccessText}{\phantom{XX}} & \colorbox{statusSuccessBorder}{\phantom{XX}} & \#7EE2A8 \\ \hline
+Warning & \colorbox{statusWarningBg}{\phantom{XX}} & \colorbox{statusWarningText}{\phantom{XX}} & \colorbox{statusWarningBorder}{\phantom{XX}} & \#F5C56B \\ \hline
+Error & \colorbox{statusErrorBg}{\phantom{XX}} & \colorbox{statusErrorText}{\phantom{XX}} & \colorbox{statusErrorBorder}{\phantom{XX}} & \#FF8A9B \\ \hline
+Info & \colorbox{statusInfoBg}{\phantom{XX}} & \colorbox{statusInfoText}{\phantom{XX}} & \colorbox{statusInfoBorder}{\phantom{XX}} & \#79D9F0 \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Wskaźniki ról użytkowników (Role Indicators)}
+Kolory wskaźników ról stosowane w elementach przypisanych do działów hotelu.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|c|l|l|}
+\hline
+\textbf{Token Roli} & \textbf{Próbka} & \textbf{HEX} & \textbf{Dział} \\ \hline
+\/color\/role\/guest & {\color{roleGuest}\rule{0.8cm}{0.4cm}} & \#2EC5E8 & Gość. \\ \hline
+\/color\/role\/housekeeping & {\color{roleHouse}\rule{0.8cm}{0.3cm}} & \#7EE2A8 & Sprzątanie. \\ \hline
+\/color\/role\/reception & {\color{roleRecep}\rule{0.8cm}{0.4cm}} & \#B8C1CC & Recepcja. \\ \hline
+\/color\/role\/kitchen & {\color{roleKitchen}\rule{0.8cm}{0.4cm}} & \#F5C56B & Kuchnia. \\ \hline
+\/color\/role\/admin & {\color{roleAdmin}\rule{0.8cm}{0.4cm}} & \#A78BFA & Admin. \\ \hline
+\/color\/role\/manager & {\color{roleManager}\rule{0.8cm}{0.4cm}} & \#60A5FA & Manager. \\ \hline
+\/color\/role\/maintenance & {\color{roleMaint}\rule{0.8cm}{0.4cm}} & \#F59E0B & Konserwacja. \\ \hline
+\end{tabular}
+\end{table}
